@@ -20,7 +20,7 @@ body {
   padding: 50px;
 }
 .container.show-nav {
-  transform: rotate(-20deg);
+  transform: rotate(-20deg) ;
 }
 
 .circle-container {
@@ -34,8 +34,13 @@ body {
   width: 200px;
   border-radius: 50%;
   position: relative;
-  transition: transform 0.5 linear;
+  transition: transform 0.5s linear;
 }
+
+.container.show-nav .circle {
+transform: rotate(-70deg);
+}
+
 .circle button {
   cursor: pointer;
   position: absolute;
@@ -61,8 +66,8 @@ body {
 }
 
 .container.show-nav + nav li {
-  transform: translateX(0);
-transition-delay: 0.3s;
+  transform: translateX(0) ;
+transition-delay: 0.3s ;
 }
 
 nav {
@@ -88,14 +93,12 @@ nav ul li i {
   margin-right: 10px;
 }
 nav ul li + li {
-  transform: translateX(-150%);
-
   margin-left: 15px;
+  transform: translateX(-150%);
 }
 nav ul li + li + li {
-  transform: translateX(-200%);
-
   margin-left: 30px;
+  transform: translateX(-200%);
 }
 
 .content img {
